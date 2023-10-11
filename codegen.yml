@@ -1,0 +1,9 @@
+overwrite: true
+schema: "${GRAPHQL_ENDPOINT}"
+documents:
+  - "queries/*.ts"
+generates:
+  generated/graphql.ts:
+    plugins:
+      - "typescript"
+      - "typescript-operations"

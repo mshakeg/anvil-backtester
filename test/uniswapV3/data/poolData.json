@@ -1,0 +1,8 @@
+{
+  "__typename": "Pool",
+  "initSqrtPriceX96": "1350174849792634181862360983626536",
+  "timestamp": 1620250931,
+  "fee": 500,
+  "lastIndexedBlock": 12879230,
+  "lastGlobalIndex": 348684
+}

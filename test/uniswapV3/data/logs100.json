@@ -1,0 +1,1635 @@
+[
+  {
+    "__typename": "Log",
+    "globalIndex": 0,
+    "data": {
+      "amount": "345073104699360",
+      "amount0": "2995507735",
+      "amount1": "999999999871526563",
+      "tickLower": "191150",
+      "tickUpper": "198080"
+    },
+    "type": "Mint",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620250931,
+      "blockNumber": 12376729
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 1,
+    "data": {
+      "amount0": "-119744094",
+      "amount1": "35000000000000000",
+      "liquidity": "345073104699360",
+      "sqrtPriceX96": "1358206768703179146794161129278934"
+    },
+    "type": "Swap",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620252901,
+      "blockNumber": 12376891
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 2,
+    "data": {
+      "amount": "310565794229424",
+      "amount0": "2588187276",
+      "amount1": "931484249884373906",
+      "tickLower": "191150",
+      "tickUpper": "198080"
+    },
+    "type": "Burn",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620253661,
+      "blockNumber": 12376958
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 3,
+    "data": {
+      "amount": "0",
+      "amount0": "0",
+      "amount1": "0",
+      "tickLower": "191150",
+      "tickUpper": "198080"
+    },
+    "type": "Burn",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620253661,
+      "blockNumber": 12376958
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 4,
+    "data": {
+      "amount": "25652705721581",
+      "amount0": "1000000",
+      "amount1": "145737680853531",
+      "tickLower": "194990",
+      "tickUpper": "195010"
+    },
+    "type": "Mint",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620254651,
+      "blockNumber": 12377035
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 5,
+    "data": {
+      "amount": "447994594415865",
+      "amount0": "598469729",
+      "amount1": "2599999995846641821",
+      "tickLower": "186730",
+      "tickUpper": "195460"
+    },
+    "type": "Mint",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620257679,
+      "blockNumber": 12377266
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 6,
+    "data": {
+      "amount0": "499756414",
+      "amount1": "-144241064315415179",
+      "liquidity": "482501904885801",
+      "sqrtPriceX96": "1334545912983135722438993170925379"
+    },
+    "type": "Swap",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620257875,
+      "blockNumber": 12377278
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 7,
+    "data": {
+      "amount": "3508224747038658",
+      "amount0": "3405610348",
+      "amount1": "0",
+      "tickLower": "194660",
+      "tickUpper": "194990"
+    },
+    "type": "Mint",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620258289,
+      "blockNumber": 12377308
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 8,
+    "data": {
+      "amount": "35118767990408024",
+      "amount0": "1549658850",
+      "amount1": "151652526935341123",
+      "tickLower": "194640",
+      "tickUpper": "194660"
+    },
+    "type": "Mint",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620258499,
+      "blockNumber": 12377327
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 9,
+    "data": {
+      "amount0": "365000000",
+      "amount1": "-103492428467657963",
+      "liquidity": "35601269895293825",
+      "sqrtPriceX96": "1334315597745343730478188229716159"
+    },
+    "type": "Swap",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620258696,
+      "blockNumber": 12377345
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 10,
+    "data": {
+      "amount0": "-176180828",
+      "amount1": "50000000000000000",
+      "liquidity": "35601269895293825",
+      "sqrtPriceX96": "1334426813649531849390742241713392"
+    },
+    "type": "Swap",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620258994,
+      "blockNumber": 12377364
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 11,
+    "data": {
+      "amount0": "-514279985",
+      "amount1": "146000000000000000",
+      "liquidity": "35601269895293825",
+      "sqrtPriceX96": "1334751564089761156615399956745312"
+    },
+    "type": "Swap",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620259056,
+      "blockNumber": 12377369
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 12,
+    "data": {
+      "amount0": "-2020724832",
+      "amount1": "575000000000000000",
+      "liquidity": "3990726651924459",
+      "sqrtPriceX96": "1339927351757144388712475515525518"
+    },
+    "type": "Swap",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620259149,
+      "blockNumber": 12377375
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 13,
+    "data": {
+      "amount0": "925233824",
+      "amount1": "-263498461658450219",
+      "liquidity": "35601269895293825",
+      "sqrtPriceX96": "1335444149395818012359096858324211"
+    },
+    "type": "Swap",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620259572,
+      "blockNumber": 12377404
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 14,
+    "data": {
+      "amount0": "1035730000",
+      "amount1": "-293973943573390213",
+      "liquidity": "35601269895293825",
+      "sqrtPriceX96": "1334789930727638689866647101237084"
+    },
+    "type": "Swap",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620259734,
+      "blockNumber": 12377421
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 15,
+    "data": {
+      "amount": "4828391768114933",
+      "amount0": "22181745033",
+      "amount1": "4999999999799242017",
+      "tickLower": "193380",
+      "tickUpper": "196260"
+    },
+    "type": "Mint",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620259901,
+      "blockNumber": 12377429
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 16,
+    "data": {
+      "amount0": "-200102390",
+      "amount1": "56829308091103679",
+      "liquidity": "40429661663408758",
+      "sqrtPriceX96": "1334901240845780480486190334762509"
+    },
+    "type": "Swap",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620260275,
+      "blockNumber": 12377453
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 17,
+    "data": {
+      "amount0": "1985387610",
+      "amount1": "-562454951913713500",
+      "liquidity": "5310893673000734",
+      "sqrtPriceX96": "1331122508723781025659082124050660"
+    },
+    "type": "Swap",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620260538,
+      "blockNumber": 12377468
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 18,
+    "data": {
+      "amount0": "-1763491355",
+      "amount1": "500000000000000000",
+      "liquidity": "40429661663408758",
+      "sqrtPriceX96": "1334778360813737937896075090219020"
+    },
+    "type": "Swap",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620260658,
+      "blockNumber": 12377475
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 19,
+    "data": {
+      "amount0": "-404588412",
+      "amount1": "114911373266935467",
+      "liquidity": "40429661663408758",
+      "sqrtPriceX96": "1335003434793411822357203379232748"
+    },
+    "type": "Swap",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620260696,
+      "blockNumber": 12377480
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 20,
+    "data": {
+      "amount0": "2000000000",
+      "amount1": "-566850891386685789",
+      "liquidity": "5310893673000734",
+      "sqrtPriceX96": "1331834890622716328212516692332486"
+    },
+    "type": "Swap",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620260808,
+      "blockNumber": 12377486
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 21,
+    "data": {
+      "amount0": "-2000000000",
+      "amount1": "567418527790587421",
+      "liquidity": "40429661663408758",
+      "sqrtPriceX96": "1335003991192467988376784209951663"
+    },
+    "type": "Swap",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620261092,
+      "blockNumber": 12377505
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 22,
+    "data": {
+      "amount0": "-3868954138",
+      "amount1": "1104441928932683385",
+      "liquidity": "8819118420039392",
+      "sqrtPriceX96": "1343004819178433089573866726711843"
+    },
+    "type": "Swap",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620261541,
+      "blockNumber": 12377530
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 23,
+    "data": {
+      "amount0": "-972148462",
+      "amount1": "280000000000000000",
+      "liquidity": "8819118420039392",
+      "sqrtPriceX96": "1345518992648522742729651819154667"
+    },
+    "type": "Swap",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620262842,
+      "blockNumber": 12377626
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 24,
+    "data": {
+      "amount0": "-100000000",
+      "amount1": "28861662133764411",
+      "liquidity": "8819118420039392",
+      "sqrtPriceX96": "1345778147024377748475042759425631"
+    },
+    "type": "Swap",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620262997,
+      "blockNumber": 12377637
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 25,
+    "data": {
+      "amount": "1092382261109467",
+      "amount0": "15454577376",
+      "amount1": "1282710509619309034",
+      "tickLower": "193380",
+      "tickUpper": "200310"
+    },
+    "type": "Mint",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620263102,
+      "blockNumber": 12377645
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 26,
+    "data": {
+      "amount0": "511748797",
+      "amount1": "-147450712444966323",
+      "liquidity": "9911500681148859",
+      "sqrtPriceX96": "1344599491098877701848127796615707"
+    },
+    "type": "Swap",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620263618,
+      "blockNumber": 12377690
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 27,
+    "data": {
+      "amount0": "1478108570",
+      "amount1": "-424442260061863885",
+      "liquidity": "9911500681148859",
+      "sqrtPriceX96": "1341206686977695404144000443604310"
+    },
+    "type": "Swap",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620263674,
+      "blockNumber": 12377694
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 28,
+    "data": {
+      "amount0": "-500000000",
+      "amount1": "143479711561220112",
+      "liquidity": "9911500681148859",
+      "sqrtPriceX96": "1342353027017779283704275586406777"
+    },
+    "type": "Swap",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620263765,
+      "blockNumber": 12377702
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 29,
+    "data": {
+      "amount0": "-347976617",
+      "amount1": "100000000000000000",
+      "liquidity": "9911500681148859",
+      "sqrtPriceX96": "1343151983209989607250401616409451"
+    },
+    "type": "Swap",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620263772,
+      "blockNumber": 12377703
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 30,
+    "data": {
+      "amount0": "-20023230",
+      "amount1": "5757810396185226",
+      "liquidity": "9911500681148859",
+      "sqrtPriceX96": "1343197985592685658868605843874775"
+    },
+    "type": "Swap",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620263784,
+      "blockNumber": 12377704
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 31,
+    "data": {
+      "amount0": "-295434566",
+      "amount1": "85000000000000000",
+      "liquidity": "9911500681148859",
+      "sqrtPriceX96": "1343877098356064433882812969377047"
+    },
+    "type": "Swap",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620263910,
+      "blockNumber": 12377714
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 32,
+    "data": {
+      "amount0": "-771965185",
+      "amount1": "222509718340998144",
+      "liquidity": "9911500681148859",
+      "sqrtPriceX96": "1345654853529019588551577852054327"
+    },
+    "type": "Swap",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620264084,
+      "blockNumber": 12377729
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 33,
+    "data": {
+      "amount0": "-830361939",
+      "amount1": "240000000000000000",
+      "liquidity": "9911500681148859",
+      "sqrtPriceX96": "1347572348390324365062280324060744"
+    },
+    "type": "Swap",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620264197,
+      "blockNumber": 12377740
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 34,
+    "data": {
+      "amount0": "-161157964",
+      "amount1": "46658858830772101",
+      "liquidity": "9911500681148859",
+      "sqrtPriceX96": "1347945132232167492123513252176747"
+    },
+    "type": "Swap",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620264530,
+      "blockNumber": 12377767
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 35,
+    "data": {
+      "amount0": "821739412",
+      "amount1": "-237405251913276745",
+      "liquidity": "9911500681148859",
+      "sqrtPriceX96": "1346047419414965248830400196506372"
+    },
+    "type": "Swap",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620264598,
+      "blockNumber": 12377773
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 36,
+    "data": {
+      "amount0": "-215218942",
+      "amount1": "62175529547529590",
+      "liquidity": "9911500681148859",
+      "sqrtPriceX96": "1346544174658324795849665731583212"
+    },
+    "type": "Swap",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620264665,
+      "blockNumber": 12377778
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 37,
+    "data": {
+      "amount0": "-328833798",
+      "amount1": "95086891030090891",
+      "liquidity": "9911500681148859",
+      "sqrtPriceX96": "1347303877262189989723221255103537"
+    },
+    "type": "Swap",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620264694,
+      "blockNumber": 12377782
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 38,
+    "data": {
+      "amount0": "-172763542",
+      "amount1": "50000000000000000",
+      "liquidity": "9911500681148859",
+      "sqrtPriceX96": "1347703355358295151496284270104874"
+    },
+    "type": "Swap",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620264721,
+      "blockNumber": 12377785
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 39,
+    "data": {
+      "amount0": "-100155934",
+      "amount1": "29000000000000000",
+      "liquidity": "9911500681148859",
+      "sqrtPriceX96": "1347935052654036145324660818805649"
+    },
+    "type": "Swap",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620264764,
+      "blockNumber": 12377790
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 40,
+    "data": {
+      "amount0": "821459228",
+      "amount1": "-237320872248992297",
+      "liquidity": "9911500681148859",
+      "sqrtPriceX96": "1346038014330633568744463746450729"
+    },
+    "type": "Swap",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620265101,
+      "blockNumber": 12377824
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 41,
+    "data": {
+      "amount0": "1397962620",
+      "amount1": "-402341584459298813",
+      "liquidity": "9911500681148859",
+      "sqrtPriceX96": "1342821873257222166365083731067117"
+    },
+    "type": "Swap",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620265102,
+      "blockNumber": 12377825
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 42,
+    "data": {
+      "amount0": "-12177668",
+      "amount1": "3500000000000000",
+      "liquidity": "9911500681148859",
+      "sqrtPriceX96": "1342849836723949527689198142117210"
+    },
+    "type": "Swap",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620265206,
+      "blockNumber": 12377836
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 43,
+    "data": {
+      "amount0": "-465849630",
+      "amount1": "134000000000000000",
+      "liquidity": "9911500681148859",
+      "sqrtPriceX96": "1343920438021511361241007022320793"
+    },
+    "type": "Swap",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620265224,
+      "blockNumber": 12377838
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 44,
+    "data": {
+      "amount0": "-1626582181",
+      "amount1": "469560780581278183",
+      "liquidity": "9911500681148859",
+      "sqrtPriceX96": "1347672022954156613754504076751454"
+    },
+    "type": "Swap",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620265338,
+      "blockNumber": 12377845
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 45,
+    "data": {
+      "amount0": "2744573284",
+      "amount1": "-790000000000000000",
+      "liquidity": "9911500681148859",
+      "sqrtPriceX96": "1341357111580007983424943659521714"
+    },
+    "type": "Swap",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620265514,
+      "blockNumber": 12377855
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 46,
+    "data": {
+      "amount0": "-100000000",
+      "amount1": "28682767764878394",
+      "liquidity": "9911500681148859",
+      "sqrtPriceX96": "1341586274329162785960180331713165"
+    },
+    "type": "Swap",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620265586,
+      "blockNumber": 12377859
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 47,
+    "data": {
+      "amount0": "-348374368",
+      "amount1": "100000000000000000",
+      "liquidity": "9911500681148859",
+      "sqrtPriceX96": "1342385230521373109506306361715839"
+    },
+    "type": "Swap",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620265698,
+      "blockNumber": 12377869
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 48,
+    "data": {
+      "amount0": "-155118224",
+      "amount1": "44564636089056968",
+      "liquidity": "9911500681148859",
+      "sqrtPriceX96": "1342741282440942626704837493353485"
+    },
+    "type": "Swap",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620265865,
+      "blockNumber": 12377877
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 49,
+    "data": {
+      "amount0": "-917879294",
+      "amount1": "264186393978915704",
+      "liquidity": "9911500681148859",
+      "sqrtPriceX96": "1344852015994614335087421778466069"
+    },
+    "type": "Swap",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620265944,
+      "blockNumber": 12377884
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 50,
+    "data": {
+      "amount0": "-399998837",
+      "amount1": "115388723744525410",
+      "liquidity": "9911500681148859",
+      "sqrtPriceX96": "1345773921348083684764881120083943"
+    },
+    "type": "Swap",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620266034,
+      "blockNumber": 12377887
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 51,
+    "data": {
+      "amount0": "-350266974",
+      "amount1": "101172438242924978",
+      "liquidity": "9911500681148859",
+      "sqrtPriceX96": "1346582244808235699326961087086967"
+    },
+    "type": "Swap",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620266076,
+      "blockNumber": 12377892
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 52,
+    "data": {
+      "amount0": "499881126",
+      "amount1": "-144206291103491155",
+      "liquidity": "9911500681148859",
+      "sqrtPriceX96": "1345429523355180984467757936902795"
+    },
+    "type": "Swap",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620266130,
+      "blockNumber": 12377894
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 53,
+    "data": {
+      "amount0": "-556024069",
+      "amount1": "160578524464078733",
+      "liquidity": "9911500681148859",
+      "sqrtPriceX96": "1346712475419746710762722369831577"
+    },
+    "type": "Swap",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620266190,
+      "blockNumber": 12377900
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 54,
+    "data": {
+      "amount0": "115467557",
+      "amount1": "-33338605128411084",
+      "liquidity": "9911500681148859",
+      "sqrtPriceX96": "1346445981322628162640386767049316"
+    },
+    "type": "Swap",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620266299,
+      "blockNumber": 12377909
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 55,
+    "data": {
+      "amount0": "3449174696",
+      "amount1": "-989821978424352921",
+      "liquidity": "9911500681148859",
+      "sqrtPriceX96": "1338533781234103800070785694341665"
+    },
+    "type": "Swap",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620266349,
+      "blockNumber": 12377916
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 56,
+    "data": {
+      "amount0": "-503104680",
+      "amount1": "143796283168110473",
+      "liquidity": "9911500681148859",
+      "sqrtPriceX96": "1339682650542643709894972285956328"
+    },
+    "type": "Swap",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620266642,
+      "blockNumber": 12377937
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 57,
+    "data": {
+      "amount0": "-350265694",
+      "amount1": "100258014044257849",
+      "liquidity": "9911500681148859",
+      "sqrtPriceX96": "1340483668154037403802212011293506"
+    },
+    "type": "Swap",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620266697,
+      "blockNumber": 12377941
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 58,
+    "data": {
+      "amount0": "-522746390",
+      "amount1": "149851069018791453",
+      "liquidity": "9911500681148859",
+      "sqrtPriceX96": "1341680912549056403839604129645244"
+    },
+    "type": "Swap",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620266752,
+      "blockNumber": 12377946
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 59,
+    "data": {
+      "amount0": "-104541122",
+      "amount1": "30000000000000000",
+      "liquidity": "9911500681148859",
+      "sqrtPriceX96": "1341920599406719500903441938646046"
+    },
+    "type": "Swap",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620266752,
+      "blockNumber": 12377946
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 60,
+    "data": {
+      "amount0": "-174152239",
+      "amount1": "50000000000000000",
+      "liquidity": "9911500681148859",
+      "sqrtPriceX96": "1342320077502824662676504953647383"
+    },
+    "type": "Swap",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620267011,
+      "blockNumber": 12377960
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 61,
+    "data": {
+      "amount0": "-1802139133",
+      "amount1": "519156678989088726",
+      "liquidity": "9911500681148859",
+      "sqrtPriceX96": "1346467911936881458789173457178294"
+    },
+    "type": "Swap",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620267011,
+      "blockNumber": 12377960
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 62,
+    "data": {
+      "amount0": "1793913395",
+      "amount1": "-516278417627522517",
+      "liquidity": "9911500681148859",
+      "sqrtPriceX96": "1342341010099282093379199828736143"
+    },
+    "type": "Swap",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620267474,
+      "blockNumber": 12378003
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 63,
+    "data": {
+      "amount0": "-24372282",
+      "amount1": "7000000000000000",
+      "liquidity": "9911500681148859",
+      "sqrtPriceX96": "1342396937032736816027428650836330"
+    },
+    "type": "Swap",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620267736,
+      "blockNumber": 12378020
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 64,
+    "data": {
+      "amount0": "300000000",
+      "amount1": "-86036797185809313",
+      "liquidity": "9911500681148859",
+      "sqrtPriceX96": "1341709196843946960204636600598096"
+    },
+    "type": "Swap",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620267802,
+      "blockNumber": 12378027
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 65,
+    "data": {
+      "amount": "1499570648517615",
+      "amount0": "167201379",
+      "amount1": "2790710881979345",
+      "tickLower": "194750",
+      "tickUpper": "194790"
+    },
+    "type": "Mint",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620267895,
+      "blockNumber": 12378038
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 66,
+    "data": {
+      "amount0": "567706928",
+      "amount1": "-162576312093930447",
+      "liquidity": "9911500681148859",
+      "sqrtPriceX96": "1340431941261012115655022752428157"
+    },
+    "type": "Swap",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620268087,
+      "blockNumber": 12378057
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 67,
+    "data": {
+      "amount": "3068914230032",
+      "amount0": "181389532",
+      "amount1": "51921516403623349",
+      "tickLower": "-46050",
+      "tickUpper": "414490"
+    },
+    "type": "Mint",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620268471,
+      "blockNumber": 12378075
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 68,
+    "data": {
+      "amount0": "-127336459",
+      "amount1": "36474951089767687",
+      "liquidity": "9914569595378891",
+      "sqrtPriceX96": "1340723269936773280212620079775329"
+    },
+    "type": "Swap",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620268581,
+      "blockNumber": 12378084
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 69,
+    "data": {
+      "amount0": "45655468",
+      "amount1": "-13066548880606003",
+      "liquidity": "9914569595378891",
+      "sqrtPriceX96": "1340618854041735764070116446430577"
+    },
+    "type": "Swap",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620268711,
+      "blockNumber": 12378094
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 70,
+    "data": {
+      "amount0": "-400000000",
+      "amount1": "114663515534549845",
+      "liquidity": "9914569595378891",
+      "sqrtPriceX96": "1341534681730074218417834803060683"
+    },
+    "type": "Swap",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620268865,
+      "blockNumber": 12378110
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 71,
+    "data": {
+      "amount0": "-696493247",
+      "amount1": "200000000000000000",
+      "liquidity": "11414140243896506",
+      "sqrtPriceX96": "1342925789969022881162609287680419"
+    },
+    "type": "Swap",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620269061,
+      "blockNumber": 12378126
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 72,
+    "data": {
+      "amount0": "-748168557",
+      "amount1": "215300614704165983",
+      "liquidity": "9914569595378891",
+      "sqrtPriceX96": "1344445518620981962898935428801287"
+    },
+    "type": "Swap",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620269095,
+      "blockNumber": 12378130
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 73,
+    "data": {
+      "amount": "1499570648517615",
+      "amount0": "0",
+      "amount1": "50832403254742608",
+      "tickLower": "194750",
+      "tickUpper": "194790"
+    },
+    "type": "Burn",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620269168,
+      "blockNumber": 12378139
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 74,
+    "data": {
+      "amount0": "1000000000",
+      "amount1": "-287321242676726737",
+      "liquidity": "9914569595378891",
+      "sqrtPriceX96": "1342149510318291527119009119737647"
+    },
+    "type": "Swap",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620269168,
+      "blockNumber": 12378139
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 75,
+    "data": {
+      "amount0": "880028242",
+      "amount1": "-252040207532232533",
+      "liquidity": "9914569595378891",
+      "sqrtPriceX96": "1340135435745472966454973761432403"
+    },
+    "type": "Swap",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620269305,
+      "blockNumber": 12378151
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 76,
+    "data": {
+      "amount0": "-300200629",
+      "amount1": "85978428100361086",
+      "liquidity": "9914569595378891",
+      "sqrtPriceX96": "1340822153091326554211901292898011"
+    },
+    "type": "Swap",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620269659,
+      "blockNumber": 12378180
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 77,
+    "data": {
+      "amount0": "-200000000",
+      "amount1": "57329568277885510",
+      "liquidity": "9914569595378891",
+      "sqrtPriceX96": "1341280049447849455528947099816248"
+    },
+    "type": "Swap",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620269663,
+      "blockNumber": 12378181
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 78,
+    "data": {
+      "amount0": "-174318609",
+      "amount1": "50000000000000000",
+      "liquidity": "9914569595378891",
+      "sqrtPriceX96": "1341679403891182610473314446960581"
+    },
+    "type": "Swap",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620269671,
+      "blockNumber": 12378183
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 79,
+    "data": {
+      "amount": "38466559516912",
+      "amount0": "10000000",
+      "amount1": "1033365407263396",
+      "tickLower": "194720",
+      "tickUpper": "194840"
+    },
+    "type": "Mint",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620270754,
+      "blockNumber": 12378260
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 80,
+    "data": {
+      "amount0": "-2362000",
+      "amount1": "677699520914276",
+      "liquidity": "9953036154895803",
+      "sqrtPriceX96": "1341684795817877114443281631073044"
+    },
+    "type": "Swap",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620270991,
+      "blockNumber": 12378268
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 81,
+    "data": {
+      "amount0": "-1321438707",
+      "amount1": "380000000000000000",
+      "liquidity": "9953036154895803",
+      "sqrtPriceX96": "1344708159536870634314689341795577"
+    },
+    "type": "Swap",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620271162,
+      "blockNumber": 12378281
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 82,
+    "data": {
+      "amount0": "418244666",
+      "amount1": "-120337404273193860",
+      "liquidity": "9953036154895803",
+      "sqrtPriceX96": "1343750249681633989467733230971520"
+    },
+    "type": "Swap",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620271421,
+      "blockNumber": 12378304
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 83,
+    "data": {
+      "amount0": "196857081",
+      "amount1": "-56580424034740921",
+      "liquidity": "9953036154895803",
+      "sqrtPriceX96": "1343299858166845267080077495911410"
+    },
+    "type": "Swap",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620271563,
+      "blockNumber": 12378322
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 84,
+    "data": {
+      "amount0": "-20013380",
+      "amount1": "5756244330561133",
+      "liquidity": "9953036154895803",
+      "sqrtPriceX96": "1343345656114915479362337391562188"
+    },
+    "type": "Swap",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620271755,
+      "blockNumber": 12378350
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 85,
+    "data": {
+      "amount": "3508224747038658",
+      "amount0": "2196096821",
+      "amount1": "345697133216421583",
+      "tickLower": "194660",
+      "tickUpper": "194990"
+    },
+    "type": "Burn",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620272249,
+      "blockNumber": 12378381
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 86,
+    "data": {
+      "amount0": "-277932113",
+      "amount1": "80000000000000000",
+      "liquidity": "6444811407857145",
+      "sqrtPriceX96": "1344328630398215252100267687148479"
+    },
+    "type": "Swap",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620272275,
+      "blockNumber": 12378384
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 87,
+    "data": {
+      "amount0": "-100084795",
+      "amount1": "28837093560030913",
+      "liquidity": "6444811407857145",
+      "sqrtPriceX96": "1344682956915398000567444385342306"
+    },
+    "type": "Swap",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620272566,
+      "blockNumber": 12378410
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 88,
+    "data": {
+      "amount0": "-519754873",
+      "amount1": "150000000000000000",
+      "liquidity": "6444811407857145",
+      "sqrtPriceX96": "1346526033696585074451063689566602"
+    },
+    "type": "Swap",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620272567,
+      "blockNumber": 12378411
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 89,
+    "data": {
+      "amount": "14688771335513",
+      "amount0": "264647",
+      "amount1": "17386686370896311",
+      "tickLower": "193380",
+      "tickUpper": "194830"
+    },
+    "type": "Mint",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620272609,
+      "blockNumber": 12378416
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 90,
+    "data": {
+      "amount0": "2000000000",
+      "amount1": "-574387425769012223",
+      "liquidity": "6421033619675746",
+      "sqrtPriceX96": "1339480539438454630792147677606935"
+    },
+    "type": "Swap",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620272716,
+      "blockNumber": 12378425
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 91,
+    "data": {
+      "amount0": "-1740427891",
+      "amount1": "500000000000000000",
+      "liquidity": "6459500179192658",
+      "sqrtPriceX96": "1345610578021311337196630262275342"
+    },
+    "type": "Swap",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620272764,
+      "blockNumber": 12378430
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 92,
+    "data": {
+      "amount": "16506652945736045",
+      "amount0": "50000000",
+      "amount1": "0",
+      "tickLower": "343580",
+      "tickUpper": "345410"
+    },
+    "type": "Mint",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620272952,
+      "blockNumber": 12378448
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 93,
+    "data": {
+      "amount0": "474928341",
+      "amount1": "-136756757095600535",
+      "liquidity": "6459500179192658",
+      "sqrtPriceX96": "1343933205736224068272139002229007"
+    },
+    "type": "Swap",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620272990,
+      "blockNumber": 12378450
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 94,
+    "data": {
+      "amount0": "1000000",
+      "amount1": "-287592701391375",
+      "liquidity": "6459500179192658",
+      "sqrtPriceX96": "1343929678305207478375265299424652"
+    },
+    "type": "Swap",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620273385,
+      "blockNumber": 12378481
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 95,
+    "data": {
+      "amount": "400177617732153",
+      "amount0": "1676886465",
+      "amount1": "949947102876346010",
+      "tickLower": "191770",
+      "tickUpper": "196260"
+    },
+    "type": "Mint",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620273415,
+      "blockNumber": 12378484
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 96,
+    "data": {
+      "amount0": "-243010959",
+      "amount1": "70000000000000000",
+      "liquidity": "6859677796924811",
+      "sqrtPriceX96": "1344737762672201437849015522755167"
+    },
+    "type": "Swap",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620273536,
+      "blockNumber": 12378494
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 97,
+    "data": {
+      "amount0": "616599732",
+      "amount1": "-177272110152905943",
+      "liquidity": "6859677796924811",
+      "sqrtPriceX96": "1342690298641348947945742697468184"
+    },
+    "type": "Swap",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620273615,
+      "blockNumber": 12378501
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 98,
+    "data": {
+      "amount0": "-120000000",
+      "amount1": "34492109364226883",
+      "liquidity": "6859677796924811",
+      "sqrtPriceX96": "1343088477703661486548357014416867"
+    },
+    "type": "Swap",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620273688,
+      "blockNumber": 12378506
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 99,
+    "data": {
+      "amount0": "-173826554",
+      "amount1": "50000000000000000",
+      "liquidity": "6859677796924811",
+      "sqrtPriceX96": "1343665680822942886172464316795806"
+    },
+    "type": "Swap",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620273717,
+      "blockNumber": 12378509
+    }
+  },
+  {
+    "__typename": "Log",
+    "globalIndex": 100,
+    "data": {
+      "amount0": "-500000000",
+      "amount1": "144061416780679902",
+      "liquidity": "6859677796924811",
+      "sqrtPriceX96": "1345328734805621010303399065939805"
+    },
+    "type": "Swap",
+    "block": {
+      "__typename": "Block",
+      "timestamp": 1620273783,
+      "blockNumber": 12378514
+    }
+  }
+]

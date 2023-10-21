@@ -118,4 +118,14 @@ contract TestUniswapV3Callee is Multicall, IUniswapV3MintCallback, IUniswapV3Swa
         (uint256 amount0, uint256 amount1) = IUniswapV3Pool(pool).burn(tickLower, tickUpper, amount);
         emit BurnEvent(amount0, amount1);
     }
+
+    function collect(address pool, int24 tickLower, int24 tickUpper) external {
+        IUniswapV3Pool(pool).collect(
+            msg.sender,
+            tickLower,
+            tickUpper,
+            0,
+            0
+        );
+    }
 }

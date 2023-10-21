@@ -267,7 +267,7 @@ describe("Anvil Memory Issue: foundry#6017", function () {
 
     }
 
-    it("should mint(burn & collect) position over both same ticks directly using UniswapV3Callee TWICE", async function () {
+    it("should mint(burn & collect) position over both already initialised ticks directly using UniswapV3Callee TWICE", async function () {
 
       console.log("- - - - Test 1 - - - -")
 
@@ -331,7 +331,7 @@ describe("Anvil Memory Issue: foundry#6017", function () {
 
     });
 
-    it("should mint(burn & collect) position over both same ticks via NFTManager TWICE", async function () {
+    it("should mint(burn & collect) position over both already initialised ticks via NFTManager TWICE", async function () {
 
       console.log("- - - - Test 2 - - - -")
 
@@ -397,11 +397,11 @@ describe("Anvil Memory Issue: foundry#6017", function () {
 
     });
 
-    it("should mint(burn & collect) position over both different ticks directly using UniswapV3Callee TWICE", async function () {
+    it("should mint(burn & collect) position over both previously uninitialised ticks directly using UniswapV3Callee TWICE", async function () {
 
     });
 
-    it("should mint(burn & collect) position over both different ticks directly via NFTManager TWICE", async function () {
+    it("should mint(burn & collect) position over both previously uninitialised ticks directly via NFTManager TWICE", async function () {
 
     });
 

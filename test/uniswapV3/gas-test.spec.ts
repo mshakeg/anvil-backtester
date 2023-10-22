@@ -397,6 +397,93 @@ describe("Anvil Memory Issue: foundry#6017", function () {
 
     });
 
+    it("should mint position A, burn position A & mint position B using UniswapV3Callee", async function () {
+
+      console.log("- - - - Test 3 - - - -")
+
+      const poolAddress = await uniswapV3Pool.getAddress();
+
+      const mintAmount = 1e6;
+
+      const mintTxA = await uniswapV3Callee.connect(lp1).mint(
+        poolAddress,
+        admin,
+        initLower,
+        initUpper,
+        mintAmount,
+      );
+      const mintRcA = await mintTxA.wait();
+
+      console.log("mintRcA:", mintRcA?.gasUsed);
+
+      const burnTx1 = await uniswapV3Callee.burn(
+        poolAddress,
+        initLower,
+        initUpper,
+        mintAmount,
+      );
+      const burnRc1 = await burnTx1.wait();
+
+      console.log("burnRc1:", burnRc1?.gasUsed)
+
+      const mintTxB = await uniswapV3Callee.connect(lp1).mint(
+        poolAddress,
+        admin,
+        testLower,
+        testUpper,
+        mintAmount,
+      );
+      const mintRcB = await mintTxB.wait();
+
+      console.log("mintRcB:", mintRcB?.gasUsed);
+
+    });
+
+    it("should mint position A, burn position A & mint position B via NFTManager", async function () {
+
+      console.log("- - - - Test 4 - - - -")
+
+      const mintParams: INonfungiblePositionManager.MintParamsStruct = {
+        token0: await token0.getAddress(),
+        token1: await token1.getAddress(),
+        fee: FeeAmount.LOW,
+        tickLower: initLower,
+        tickUpper: initUpper,
+        amount0Desired: 1e9,
+        amount1Desired: 1e9,
+        amount0Min: 2,
+        amount1Min: 2,
+        recipient: await lp1.getAddress(),
+        deadline: ethers.MaxUint256
+      }
+
+      const mintTxA = await nftManager.connect(lp1).mint(mintParams);
+      const mintRcA = await mintTxA.wait();
+      console.log("mintRcA:", mintRcA?.gasUsed);
+
+      const positionLiquidity = (await nftManager.positions(1)).liquidity;
+
+      const burnParams: INonfungiblePositionManager.DecreaseLiquidityParamsStruct = {
+        tokenId: 1,
+        liquidity: positionLiquidity,
+        amount0Min: 0,
+        amount1Min: 0,
+        deadline: ethers.MaxUint256
+      }
+
+      const burnTxA = await nftManager.connect(lp1).decreaseLiquidity(burnParams);
+      const burnRcA = await burnTxA.wait();
+      console.log("burnRcA:", burnRcA?.gasUsed)
+
+      mintParams.tickLower = testLower;
+      mintParams.tickUpper = testUpper;
+
+      const mintTxB = await nftManager.connect(lp1).mint(mintParams);
+      const mintRcB = await mintTxB.wait();
+      console.log("mintRcB:", mintRcB?.gasUsed);
+
+    });
+
     it("should mint(burn & collect) position over both previously uninitialised ticks directly using UniswapV3Callee TWICE", async function () {
 
     });

@@ -287,23 +287,33 @@ describe("Anvil Memory Issue: foundry#6017", function () {
       const feeData = await ethers.provider.getFeeData();
       const gasPrice = feeData.gasPrice;
 
-      // TODO: consider turning of auto & interval mining and manually mining blocks
+      // turn of auto & interval mining and manually mining blocks
+      await network.provider.send("evm_setIntervalMining", [0]);
+
+      let timestamp = 1619830000; // 10_000s from genesis
 
       for (let i = 0; i < blocksToMine; i++) {
 
-        const swapsInNullBlock = BigInt(nullBlockData.length);
+        await network.provider.send("evm_setNextBlockTimestamp", [timestamp])
 
-        console.log("about to process nullblock", i, swapsInNullBlock);
+        const startTime = Date.now();
+
+        const swapsInNullBlock = BigInt(nullBlockData.length);
 
         await uniswapV3Callee.multicall(nullBlockData, {
           gasLimit: BigInt(1e6) * swapsInNullBlock,
           gasPrice
         })
+        await network.provider.send("evm_mine");
 
         const finalSqrtPriceX96 = (await uniswapV3Pool.slot0()).sqrtPriceX96;
 
         expect(isWithinTolerance(initialSqrtPriceX96, finalSqrtPriceX96)).to.be.true;
 
+        const endTime = Date.now();
+
+        console.log("processed nullblock", i, endTime - startTime);
+        timestamp += 15;
       }
 
       console.log(Date.now());

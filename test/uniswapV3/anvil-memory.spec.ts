@@ -55,6 +55,8 @@ describe("Anvil Memory Issue: foundry#6017", function () {
   const v3PoolData: PoolData = poolData;
 
   before(async function () {
+    // disable anvil node logging to help reduce time
+    await network.provider.send("anvil_setLoggingEnabled", [false]);
     signers = await ethers.getSigners();
     this.loadFixture = loadFixture;
   });
@@ -97,7 +99,6 @@ describe("Anvil Memory Issue: foundry#6017", function () {
     });
 
     it("should replicate the first 100 pool logs and then expand anvil memory usage", async function () {
-      console.log(Date.now());
 
       const initSqrtPriceX96 = v3PoolData.initSqrtPriceX96;
 
@@ -233,7 +234,28 @@ describe("Anvil Memory Issue: foundry#6017", function () {
       const liquidity = BigInt(swapData.liquidity);
       const sqrtPriceX96 = BigInt(swapData.sqrtPriceX96);
 
-      const nullSwapsPerBlock = 1000; // the number of times to create a swap in a given direction and to cancel it in the opposite direction
+      // NOTE nullSwapsPerBlock can be used to more accurately gauge the raw evm TPS
+      // a higher value of nullSwapsPerBlock entails more time spent processing txs relative to mining blocks with those txs
+      const nullSwapsPerBlock = 2000; // the number of times to create a swap in a given direction and to cancel it in the opposite direction
+
+      // Example runs demoing how the foundry anvil node spends quite a bit of time mining blocks which could probably be improved
+      // {
+      //   blocksToMine: 25,
+      //   nullSwapsPerBlock: 1,
+      //   totalTxs: 50,
+      //   executionTime: 0.084,
+      //   averageTPS: 595.2380952380952,
+      //   averageTimePerTx: 1.6800000000000002
+      // }
+
+      // {
+      //   blocksToMine: 25,
+      //   nullSwapsPerBlock: 2000,
+      //   totalTxs: 100000,
+      //   executionTime: 24.747,
+      //   averageTPS: 4040.8938457186728,
+      //   averageTimePerTx: 0.24747000000000002
+      // }
 
       const nullBlockData: Array<string> = [];
 
@@ -283,30 +305,58 @@ describe("Anvil Memory Issue: foundry#6017", function () {
         }
       }
 
-      const blocksToMine = 1000;
+      const blocksToMine = 25;
       const feeData = await ethers.provider.getFeeData();
       const gasPrice = feeData.gasPrice;
 
-      // TODO: consider turning of auto & interval mining and manually mining blocks
+      // turn of auto & interval mining and manually mining blocks
+      await network.provider.send("evm_setIntervalMining", [0]);
+
+      let timestamp = 1619830000; // 10_000s from genesis
+
+      const overallStartTime = Date.now();
 
       for (let i = 0; i < blocksToMine; i++) {
 
-        const swapsInNullBlock = BigInt(nullBlockData.length);
+        await network.provider.send("evm_setNextBlockTimestamp", [timestamp])
 
-        console.log("about to process nullblock", i, swapsInNullBlock);
+        const startTime = Date.now();
+
+        const swapsInNullBlock = BigInt(nullBlockData.length);
 
         await uniswapV3Callee.multicall(nullBlockData, {
           gasLimit: BigInt(1e6) * swapsInNullBlock,
           gasPrice
         })
+        await network.provider.send("evm_mine");
 
         const finalSqrtPriceX96 = (await uniswapV3Pool.slot0()).sqrtPriceX96;
 
         expect(isWithinTolerance(initialSqrtPriceX96, finalSqrtPriceX96)).to.be.true;
 
+        const endTime = Date.now();
+
+        console.log("processed nullblock", i, endTime - startTime);
+        timestamp += 15;
       }
 
-      console.log(Date.now());
+      const overallEndTime = Date.now();
+
+      const totalTxs = blocksToMine * nullSwapsPerBlock * 2; // each null swap is effectively 2 swap txs
+      const executionTime = (overallEndTime - overallStartTime) / 1000; // in seconds
+
+      const averageTPS = totalTxs/executionTime;
+      const averageTimePerTx = 1000/averageTPS; // in milliseconds
+
+      console.log({
+        blocksToMine,
+        nullSwapsPerBlock,
+        totalTxs,
+        executionTime,
+        averageTPS,
+        averageTimePerTx
+      });
+
     });
   });
 });

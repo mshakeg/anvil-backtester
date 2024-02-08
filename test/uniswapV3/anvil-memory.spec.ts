@@ -50,7 +50,9 @@ function isWithinTolerance(expected: bigint, actual: bigint, toleranceFraction: 
   return relativeDifference <= toleranceAsBigInt;
 }
 
-describe("Anvil Memory Issue: foundry#6017", function () {
+// foundry#6017 - memory issue - partly resolved
+// foundry#7039 - block mining performance issue - unresolved
+describe("Anvil Issues: foundry#6017 AND foundry#7039", function () {
   let signers: HardhatEthersSigner[];
   const v3PoolData: PoolData = poolData;
 
@@ -305,15 +307,23 @@ describe("Anvil Memory Issue: foundry#6017", function () {
         }
       }
 
-      const blocksToMine = 25;
+      const blocksToMine = 10;
       const feeData = await ethers.provider.getFeeData();
-      const gasPrice = feeData.gasPrice;
+      const gasPrice = feeData.gasPrice ? feeData.gasPrice.toString() : 0;
+
+      const doMulticall = true;
+      const doChecks = false;
+      const sendUnsigned = true;
+      const uniswapV3CalleeAddress = await uniswapV3Callee.getAddress();
 
       // turn of auto & interval mining and manually mining blocks
       await network.provider.send("evm_setIntervalMining", [0]);
 
       let timestamp = 1619830000; // 10_000s from genesis
 
+      const swapsInNullBlock = BigInt(nullBlockData.length);
+
+      const callGasLimit = 1e6;
       const overallStartTime = Date.now();
 
       for (let i = 0; i < blocksToMine; i++) {
@@ -322,21 +332,54 @@ describe("Anvil Memory Issue: foundry#6017", function () {
 
         const startTime = Date.now();
 
-        const swapsInNullBlock = BigInt(nullBlockData.length);
+        if (doMulticall) {
+          if (sendUnsigned) {
+            const multicallTxCalldata = await uniswapV3Callee.interface.encodeFunctionData("multicall", [nullBlockData]);
+            await network.provider.send("eth_sendUnsignedTransaction", [{
+              data: multicallTxCalldata,
+              from: adminAddress,
+              to: uniswapV3CalleeAddress,
+              gas: callGasLimit,
+              gasPrice
+            }]);
+          } else {
+            await uniswapV3Callee.multicall(nullBlockData, {
+              gasLimit: BigInt(callGasLimit) * swapsInNullBlock,
+              gasPrice
+            });
+          }
+        } else {
+          for (const nullBlockTxCalldata of nullBlockData) {
+            if (sendUnsigned) {
+              await network.provider.send("eth_sendUnsignedTransaction", [{
+                data: nullBlockTxCalldata,
+                from: adminAddress,
+                to: uniswapV3CalleeAddress,
+                gas: callGasLimit,
+                gasPrice
+              }]);
+            } else {
+              const txRequest = await admin.populateTransaction({
+                data: nullBlockTxCalldata,
+                from: adminAddress,
+                to: uniswapV3CalleeAddress,
+                gasLimit: callGasLimit,
+                gasPrice
+              })
+              await admin.sendTransaction(txRequest);
+            }
+          }
+        }
 
-        await uniswapV3Callee.multicall(nullBlockData, {
-          gasLimit: BigInt(1e6) * swapsInNullBlock,
-          gasPrice
-        })
         await network.provider.send("evm_mine");
 
-        const finalSqrtPriceX96 = (await uniswapV3Pool.slot0()).sqrtPriceX96;
+        if (doChecks) {
+          const finalSqrtPriceX96 = (await uniswapV3Pool.slot0()).sqrtPriceX96;
+          expect(isWithinTolerance(initialSqrtPriceX96, finalSqrtPriceX96)).to.be.true;
+          const endTime = Date.now();
+          console.log("processed nullblock", i, endTime - startTime);
+        }
 
-        expect(isWithinTolerance(initialSqrtPriceX96, finalSqrtPriceX96)).to.be.true;
-
-        const endTime = Date.now();
-
-        console.log("processed nullblock", i, endTime - startTime);
         timestamp += 15;
       }
 
@@ -345,8 +388,8 @@ describe("Anvil Memory Issue: foundry#6017", function () {
       const totalTxs = blocksToMine * nullSwapsPerBlock * 2; // each null swap is effectively 2 swap txs
       const executionTime = (overallEndTime - overallStartTime) / 1000; // in seconds
 
-      const averageTPS = totalTxs/executionTime;
-      const averageTimePerTx = 1000/averageTPS; // in milliseconds
+      const averageTPS = totalTxs / executionTime;
+      const averageTimePerTx = 1000 / averageTPS; // in milliseconds
 
       console.log({
         blocksToMine,
